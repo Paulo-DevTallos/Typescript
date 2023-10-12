@@ -37,7 +37,7 @@ class Curso {
     name = null;
     canal = null;
 
-    constructor(name, canal) {
+    constructor(name: any, canal: any) {
         this.name = name;
         this.canal = canal;
     }
@@ -60,4 +60,12 @@ console.log(meuCurso);
  * }());
  * var meuCurso = new Curso("Typescript", "CFB Cursos");
  * console.log(meuCurso);
+ */
+
+/**
+ * Utilizando as abordagens de compilação a partir do tsconfig.json e definindo parametros como
+ * rootDirs, outDir é preciso setar os arquivos de saída e build da compilação. para isso 
+ * utilizamos apenas o comando "tsc" que será responsável por ler as configurações do tsconfig
+ * e aplicá-las
+ * 
  */
