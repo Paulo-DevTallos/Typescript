@@ -1,0 +1,18 @@
+"use strict";
+let cursos = ['Typescript', 'ReactJs', 'vueJS', 'NodeJS'];
+cursos.push('NestJS');
+console.log(cursos);
+let listaDeCompras = [];
+listaDeCompras.push('banana', 'maça', 'abacate');
+console.log(listaDeCompras);
+let valores = [10, 150, 200];
+let novoValor = [10, 150, 200];
+novoValor.push('Joãozinho');
+console.log(novoValor);
+let myName = "Paulo";
+let myAge = 32;
+let newData;
+newData = myAge;
+console.log(typeof newData);
+newData = myName;
+console.log(typeof newData);
