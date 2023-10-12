@@ -23,9 +23,41 @@
  * final é preciso realizar uma etapa de compilação com o comando ex: "tsc index.ts", isso 
  * fará que seja gerado um arquivo .js em uma versão padrão do EcmaScript o qual poderá ser
  * executado e intepretado.
+ * 
+ * Por padrão o compilador do TS entrega um código na versão ES3 pra setar a compilação em uma 
+ * versão específica utrilizamos o comando ex: "tsc index.ts --target 'ES2016'"
  */
 const fisrtName = "Paulo";
 const lastName = "Sergio";
 
 console.log(fisrtName);
 console.log(lastName);
+
+class Curso {
+    name = null;
+    canal = null;
+
+    constructor(name, canal) {
+        this.name = name;
+        this.canal = canal;
+    }
+}
+
+let meuCurso = new Curso("Typescript", "CFB Cursos");
+console.log(meuCurso);
+/**
+ * Padrão de execução utilizando o ES3 - Utilizando o comando tsc <path/file> --target '[ESVersion]'
+ * é feita a compilação para uma versão mais
+ * 
+ * var Curso = @class (function () {
+ *   function Curso(name, canal) {
+ *       this.name = null;
+ *       this.canal = null;
+ *       this.name = name;
+ *       this.canal = canal;
+ *   }
+ *   return Curso;
+ * }());
+ * var meuCurso = new Curso("Typescript", "CFB Cursos");
+ * console.log(meuCurso);
+ */
